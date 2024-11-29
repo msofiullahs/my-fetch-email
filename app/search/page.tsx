@@ -10,7 +10,7 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import { findymailFinder, hunterFinder, prospeoFinder } from "@/shared/config"
+import { findymailFinder, hunterFinder, prospeoFinder } from "@/shared/provider"
 // import { prospeoFinder } from '@/shared/config'
 
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -37,11 +37,10 @@ export default function Search() {
     prospeoFinder(values);
     hunterFinder(values);
     findymailFinder(values);
-    console.log(values)
   }
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <form onSubmit={form.handleSubmit(onSubmit)}>
         <FormField
           control={form.control}
           name="fullname"

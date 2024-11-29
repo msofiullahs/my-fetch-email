@@ -1,0 +1,16 @@
+# Environment variables declared in this file are automatically made available to Prisma.
+# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+
+# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
+# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+
+DATABASE_URL="mysql://root:root@localhost:3306/db_fetch_email"
+DB_HOST="127.0.0.1"
+DB_PORT=3306
+DB_NAME="db_fetch_email"
+DB_USER="root"
+DB_PASS="root"
+
+PROSPEO_KEY="e84555ef3fb53549a8adcc4f17d85d6c"
+HUNTER_KEY="bb5136c242f0f32c3823cc49bb436bc3298becbc"
+FINDYMAIL_KEY="qodXVXRAMNRDP2KpGMTCuWgJ0CctSSeLld11G7rK68e533dc"

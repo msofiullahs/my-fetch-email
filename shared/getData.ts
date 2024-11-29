@@ -1,7 +1,7 @@
 import { GetDBSettings } from '@/shared/config'
 import mysql from 'mysql2/promise'
 
-const connectionParams = GetDBSettings();
+const connectionParams = await GetDBSettings();
 
 export async function getServerSideProps() {
   const connection = await mysql.createConnection(connectionParams);
