@@ -18,9 +18,9 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
  
 const formSchema = z.object({
-  fullname: z.string().nullable().optional(),
-  domain: z.string().nullable().optional(),
-  linkedin: z.string().nullable().optional(),
+  fullname: z.string().optional(),
+  domain: z.string().optional(),
+  linkedin: z.string().optional(),
 })
 
 export default function Search() {
